@@ -2,7 +2,7 @@ public class HelloWorld {
     public static void main(String[] args){
         System.out.println("Hello World!!");
     }
-<<<<<<< HEAD
+//<<<<<<< HEAD
 }
 
 
@@ -11,4 +11,4 @@ public class HelloWorld {
     //asad putting stuff
 }
 //Mahmood's Contribution
->>>>>>> 1badc71ab50d43001df81d09cb7fb7710467c9c3
+//>>>>>>> 1badc71ab50d43001df81d09cb7fb7710467c9c3
