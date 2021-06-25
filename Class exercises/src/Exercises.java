@@ -1,6 +1,7 @@
 import java.util.Arrays;
 //Create a while loop that stores the numbers
 //one through fifty in an array.
+//nice work
 public class Exercises {
 	
 	public static void main(String[] args) {
@@ -53,5 +54,5 @@ public class Exercises {
   }
 }
 
-
+//contribution
 
