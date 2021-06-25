@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Converter{
 	
 	public static void menu() {
-		System.out.println("1. Cups to Teaspoons\n2. Miles to Kilometers\n3. US Gallons to Imperial Gallons\n4. Quit" );
+		System.out.println("1. Cups to Teaspoons\n2. Miles to Kilometers\n3. US Gallons to Imperial Gallons\n4. Quit\n" );
 	}
 	
 	public static void showCups( double userInput  ) {
@@ -38,17 +38,17 @@ public class Converter{
 		int sentinel = 4;
 		int menuSelection;
 		
-		System.out.println(" Please enter a number:");
+		System.out.println("Please enter a number:");
 		userInput = scanner.nextDouble();
 		
 		while(userInput < 0 ) {
-			System.out.println("Plese enter a positive number:");
+			System.out.println("Please enter a positive number:");
 			userInput = scanner.nextDouble();
 		}
 		
 		menu();
 		
-		System.out.println(" Please choose an option: ");
+		System.out.println(" Please choose an option: \n");
 		menuSelection = scanner.nextInt();
 		
 		while(menuSelection != sentinel ) {
