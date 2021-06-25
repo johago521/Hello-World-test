@@ -1,0 +1,47 @@
+import java.util.Arrays;
+//Create a while loop that stores the numbers
+//one through fifty in an array.
+public class Exercises {
+	
+	public static void main(String[] args) {
+		
+		int[] nums = new int[50];
+		int counter = 1;
+		int i = 0;
+		
+		while (i < nums.length){
+			nums[i] = counter;
+			i++;
+			counter++;
+		}
+			System.out.println(Arrays.toString(nums));
+		
+		i = 0;
+		
+		do {
+			int currentElement = nums [i];
+			//check is is odd 
+			if(currentElement % 2 != 0) {
+				nums[i] = currentElement + 5;
+			}
+			i++;
+			
+		}while (i < nums.length);
+		
+		System.out.println(Arrays.toString(nums));
+	
+
+	for(int x = 0; x < nums.length; x++) {
+		int currentElement = nums [x];
+		if(currentElement % 4 == 0 && currentElement % 6 ==0)
+			System.out.println("FOUR!! SIX!!");
+		else if (currentElement % 4 == 0)
+			System.out.println("SIX!!");
+		else
+			System.out.println(currentElement);
+	}
+  }
+}
+
+
+

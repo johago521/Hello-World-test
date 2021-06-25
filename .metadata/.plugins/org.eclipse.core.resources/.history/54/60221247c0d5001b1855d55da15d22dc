@@ -1,0 +1,7 @@
+
+public class practice {
+	public void myMethos() {
+		System.out.println("hello");
+	}
+
+}

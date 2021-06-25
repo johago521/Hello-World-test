@@ -1,0 +1,10 @@
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		int result = 8+9;
+		System.out.println(result);
+		
+		String textValue = "Hello"+" "+"World";
+		System.out.println(textValue);
+	}
+}

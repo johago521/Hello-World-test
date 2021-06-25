@@ -1,0 +1,74 @@
+package main;
+
+import java.util.Scanner;
+
+public class Converter{
+	
+	public static void menu() {
+		System.out.println("1. Convert to kilometers\n2. Convert to inches\n3. Convert to feet\n4. Quit" );
+	}
+	
+	public static void showKilometers( double userMeters  ) {
+		double kilometers;
+		kilometers = userMeters * 0.001;
+		System.out.printf( "%.2f meters converted to kilometers is %.2f\n\n", userMeters, kilometers );
+	}
+	
+	public static void showInches( double userMeters  ) {
+		double inches;
+		inches = userMeters * 13.37;
+		System.out.printf( "%.2f meters converted to inches is %.2f\n\n", userMeters, inches );
+	}
+	
+	public static void showFeet( double userMeters  ) {
+		double feet;
+		feet = userMeters * 3.281;
+		System.out.printf( "%.2f meters converted to feet is %.2f\n\n", userMeters, feet );
+	}
+	
+	public static void showError (String errorMessage ) {
+		System.out.println("Error:" + errorMessage);
+	}
+
+	
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		double userMeters;
+		int sentinel = 4;
+		int userChoice;
+		
+		System.out.println(" Please enter the distance in meters: \n");
+		userMeters = scanner.nextDouble();
+		
+		while(userMeters < 0 ) {
+			System.out.println("Plese enter a positive number:\n");
+			userMeters = scanner.nextDouble();
+		}
+		
+		menu();
+		
+		System.out.println(" Please choose an option: ");
+		userChoice = scanner.nextInt();
+		
+		while(userChoice != sentinel ) {
+			if(userChoice == 1 ) {
+				showKilometers(userMeters);
+			} else if (userChoice == 2) {
+				showInches(userMeters);
+			} else if (userChoice == 3 ) {
+				showFeet (userMeters);
+			} else {
+				showError("Please enter a valid option");
+			} 
+		menu();
+		System.out.println(" Please choose an option: ");
+		userChoice = scanner.nextInt();
+		
+		}
+		
+		System.out.println("Good Bye!");
+		
+	}
+	
+}

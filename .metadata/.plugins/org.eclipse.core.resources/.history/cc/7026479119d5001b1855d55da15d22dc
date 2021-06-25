@@ -1,0 +1,15 @@
+//Using arrays
+public class Exercises {
+	
+	public static void main(String[] args) {
+		//Prepopulated array
+		//it's still an object
+		int i = 0;
+		//i ++;
+		
+		System.out.println(i++);
+		System.out.println(i);
+	}
+	
+}
+

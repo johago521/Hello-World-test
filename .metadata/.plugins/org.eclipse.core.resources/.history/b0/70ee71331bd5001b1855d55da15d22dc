@@ -1,0 +1,20 @@
+//Using arrays
+public class Exercises {
+	
+	public static void main(String[] args) {
+		//Prepopulated array
+		//it's still an object
+		for (int i = 0; i<=10; ++i ) {
+			
+		
+		System.out.println(i);
+		}
+		//i ++;
+	/*	do {
+			System.out.println(i);
+			i++;
+		}while (i<3);
+	}*/
+	}	
+}
+

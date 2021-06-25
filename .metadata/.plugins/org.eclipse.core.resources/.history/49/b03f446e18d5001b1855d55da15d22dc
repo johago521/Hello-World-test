@@ -1,0 +1,17 @@
+//Using arrays
+public class Exercises {
+	
+	public static void main(String[] args) {
+		//Prepopulated array
+		//it's still an object
+		int x = 10;
+		while (x<9) {		
+		System.out.println(x);
+		x+=1;
+		}
+		
+		
+	}
+	
+}
+

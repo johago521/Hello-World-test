@@ -1,0 +1,14 @@
+//Using arrays
+public class Exercises {
+	
+	public static void main(String[] args) {
+		int i = 0;
+		int[] nums = new int [51];
+		while (i <= 50) {
+			nums[i] = i++;
+		System.out.println(nums);
+		}
+	
+	}
+}
+

@@ -1,0 +1,8 @@
+
+public class practice {
+	public void myMethod(){
+		myMethod();
+		System.out.println("hello");
+	}
+
+}
