@@ -38,7 +38,7 @@ public class Converter{
 		int sentinel = 4;
 		int menuSelection;
 		
-		System.out.println("Please enter a number:");
+		System.out.println("Welcome!! This is a unit converter program. \nPlease enter the amount you want to be converted.");
 		userInput = scanner.nextDouble();
 		
 		while(userInput < 0 ) {
